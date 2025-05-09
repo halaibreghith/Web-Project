@@ -1,0 +1,220 @@
+/* General Styles */
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: white;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin-right: 14px;
+    transition: all .2s ease-in-out;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header a:hover {
+    color: #fd6721;
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fd6721;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    flex-grow: 1;
+    margin: 20px;
+}
+
+main .title {
+    margin-top: 50px;
+    color: #fd6721;
+    font-size: 34px;
+    text-align: center;
+}
+
+main .description {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    width: 200px;
+    background-color: #333;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #fd6721;
+}
+
+/* Form Styles */
+form {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #444;
+    color: white;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #fd6721;
+}
+
+/* Button Styles */
+button {
+    display: block;
+    width: 100%;
+    background-color: #fd6721;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e5560e;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+/* Custom Classes */
+.title-subtitle {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
